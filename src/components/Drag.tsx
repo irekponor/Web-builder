@@ -123,7 +123,7 @@ export default function DragDropBuilder() {
           <div className="space-y-4">
             {selected.type === "text" && (
               <input
-                className="w-full p-2 border rounded"
+                className="w-full p-2 outline-1 border rounded"
                 value={selected.content}
                 onChange={(e) =>
                   updateElement(selected.id, { content: e.target.value })
@@ -132,7 +132,7 @@ export default function DragDropBuilder() {
             )}
             {selected.type === "image" && (
               <input
-                className="w-full p-2 border rounded"
+                className="w-full p-2 outline-1 border rounded"
                 value={selected.src}
                 onChange={(e) =>
                   updateElement(selected.id, { src: e.target.value })
@@ -141,7 +141,7 @@ export default function DragDropBuilder() {
             )}
             {selected.type === "button" && (
               <input
-                className="w-full p-2 border rounded"
+                className="w-full p-2 outline-1 rounded"
                 value={selected.label}
                 onChange={(e) =>
                   updateElement(selected.id, { label: e.target.value })
