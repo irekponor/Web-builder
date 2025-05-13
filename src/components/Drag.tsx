@@ -33,7 +33,7 @@ export default function DragDropBuilder() {
       id: Date.now(),
       type,
       content: type === "text" ? "Edit me" : "",
-      src: type === "image" ? "https://via.placeholder.com/150" : "",
+      src: type === "image" ? "https://imagelink.com/150" : "",
       label: type === "button" ? "Click me" : "",
     };
 
@@ -52,7 +52,6 @@ export default function DragDropBuilder() {
 
   return (
     <div className="grid grid-cols-3 gap-4 h-screen p-4">
-      {/* Sidebar */}
       <div className="bg-gray-100 p-4 rounded-xl">
         <h2 className="font-bold mb-4">Elements</h2>
         {components.map((comp) => (
@@ -69,7 +68,6 @@ export default function DragDropBuilder() {
         ))}
       </div>
 
-      {/* Drop Zone */}
       <div
         className="bg-white border rounded-xl p-4 overflow-auto min-h-[80vh]"
         onDragOver={(e) => e.preventDefault()}
@@ -95,9 +93,8 @@ export default function DragDropBuilder() {
         ))}
       </div>
 
-      {/* Edit Panel */}
       <div className="bg-gray-50 p-4 rounded-xl">
-        <h2 className="font-bold mb-4">Edit</h2>
+        <h2 className="font-bold mb-4">Edit element</h2>
         {selected ? (
           <div className="space-y-4">
             {selected.type === "text" && (
