@@ -68,11 +68,11 @@ export default function DragDropBuilder() {
   return (
     <div className="grid grid-cols-3 gap-4 h-screen p-4">
       <div className="bg-purple-700 p-4 rounded-xl">
-        <h2 className="text-white font-bold mb-4">Elements</h2>
+        <h2 className="text-white font-bold mb-7">Elements</h2>
         {components.map((comp) => (
           <div
             key={comp.type}
-            className="bg-white p-2 rounded shadow cursor-move mb-2"
+            className="outline-2 outline-amber-100 text-white p-2 rounded shadow cursor-move mb-7"
             draggable
             onDragStart={(e) => {
               e.dataTransfer.setData("componentType", comp.type);
@@ -117,7 +117,7 @@ export default function DragDropBuilder() {
         ))}
       </div>
 
-      <div className="bg-purple-700 p-4 rounded-xl">
+      <div className="bg-gray-100 p-4 rounded-xl">
         <h2 className="font-bold mb-4">Edit elements</h2>
         {selected ? (
           <div className="space-y-4">
