@@ -117,8 +117,8 @@ export default function DragDropBuilder() {
         ))}
       </div>
 
-      <div className="bg-gray-100 p-4 rounded-xl">
-        <h2 className="font-bold mb-4">Edit elements</h2>
+      <div className="bg-purple-700 p-4 rounded-xl">
+        <h2 className="text-white font-bold mb-4">Edit elements</h2>
         {selected ? (
           <div className="space-y-4">
             {selected.type === "text" && (
@@ -156,9 +156,7 @@ export default function DragDropBuilder() {
             </button>
           </div>
         ) : (
-          <p className="text-gray-400">
-            Click on an element to edit or delete it
-          </p>
+          <p className="text-white">Click on an element to edit or delete it</p>
         )}
       </div>
     </div>
