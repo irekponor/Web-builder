@@ -67,8 +67,8 @@ export default function DragDropBuilder() {
 
   return (
     <div className="grid grid-cols-3 gap-4 h-screen p-4">
-      <div className="bg-gray-100 p-4 rounded-xl">
-        <h2 className="font-bold mb-4">Elements</h2>
+      <div className="bg-purple-700 p-4 rounded-xl">
+        <h2 className="text-white font-bold mb-4">Elements</h2>
         {components.map((comp) => (
           <div
             key={comp.type}
@@ -117,7 +117,7 @@ export default function DragDropBuilder() {
         ))}
       </div>
 
-      <div className="bg-gray-50 p-4 rounded-xl">
+      <div className="bg-purple-700 p-4 rounded-xl">
         <h2 className="font-bold mb-4">Edit elements</h2>
         {selected ? (
           <div className="space-y-4">
