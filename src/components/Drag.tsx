@@ -29,8 +29,8 @@ export default function DragDropBuilder() {
       const newElement: ElementType = {
         id: Date.now(),
         type,
-        content: type === "text" ? "Edit me" : "",
-        src: type === "image" ? "https://via.placeholder.com/150" : "",
+        content: type === "text" ? "click to edit" : "",
+        src: type === "image" ? "https://imagelink.com/150" : "",
         label: type === "button" ? "Click me" : "",
       };
       setElements([...elements, newElement]);
@@ -109,7 +109,7 @@ export default function DragDropBuilder() {
               <img src={el.src} alt="Dropped" className="w-full max-w-xs" />
             )}
             {el.type === "button" && (
-              <button className="px-4 py-2 bg-blue-500 text-white rounded">
+              <button className="px-4 py-2 bg-purple-700 text-white rounded">
                 {el.label}
               </button>
             )}
