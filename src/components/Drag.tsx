@@ -84,7 +84,7 @@ export default function DragDropBuilder() {
       </div>
 
       <div
-        className="bg-white border rounded-xl p-4 overflow-auto md:min-h-[80vh] h-[40vh]"
+        className="bg-white border rounded-xl p-4 overflow-auto md:min-h-[94vh] h-[40vh]"
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
       >
