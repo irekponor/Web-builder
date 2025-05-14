@@ -66,7 +66,7 @@ export default function DragDropBuilder() {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-4 h-screen p-4">
+    <div className="grid md:grid-cols-3 md:gap-4 gap-2 md:h-screen h-1 max-md:p-3 p-4">
       <div className="bg-purple-700 p-4 rounded-xl">
         <h2 className="text-white font-bold mb-7">Elements</h2>
         {components.map((comp) => (
@@ -84,7 +84,7 @@ export default function DragDropBuilder() {
       </div>
 
       <div
-        className="bg-white border rounded-xl p-4 overflow-auto min-h-[80vh]"
+        className="bg-white border rounded-xl p-4 overflow-auto md:min-h-[80vh] h-[40vh]"
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
       >
