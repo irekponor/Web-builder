@@ -123,7 +123,7 @@ export default function DragDropBuilder() {
           <div className="space-y-4">
             {selected.type === "text" && (
               <input
-                className="w-full p-2 outline-1 border rounded"
+                className="w-full p-2 outline-white text-white border rounded"
                 value={selected.content}
                 onChange={(e) =>
                   updateElement(selected.id, { content: e.target.value })
