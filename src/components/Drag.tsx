@@ -31,7 +31,7 @@ export default function DragDropBuilder() {
         type,
         content: type === "text" ? "click to edit" : "",
         src: type === "image" ? "https://imagelink.com/150" : "",
-        label: type === "button" ? "Click me" : "",
+        label: type === "button" ? "Click to edit" : "",
       };
       setElements([...elements, newElement]);
     } else if (dragIndex !== null) {
@@ -141,7 +141,7 @@ export default function DragDropBuilder() {
             )}
             {selected.type === "button" && (
               <input
-                className="w-full p-2 outline-1 rounded"
+                className="w-full p-2 outline-white text-white border rounded"
                 value={selected.label}
                 onChange={(e) =>
                   updateElement(selected.id, { label: e.target.value })
