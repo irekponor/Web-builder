@@ -132,7 +132,7 @@ export default function DragDropBuilder() {
             )}
             {selected.type === "image" && (
               <input
-                className="w-full p-2 outline-1 border rounded"
+                className="w-full p-2 outline-white text-white border rounded"
                 value={selected.src}
                 onChange={(e) =>
                   updateElement(selected.id, { src: e.target.value })
